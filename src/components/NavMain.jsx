@@ -1,6 +1,6 @@
 import React from 'react'
 import { storyblokEditable } from '@storyblok/react'
-import NavMainItem from './nav_main_item'
+import NavMainItem from './NavMainItem'
 
 export default function NavMain({ blok }) {
   return (

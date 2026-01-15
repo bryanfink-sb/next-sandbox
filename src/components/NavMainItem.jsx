@@ -1,6 +1,6 @@
 import React from 'react'
 import { storyblokEditable } from '@storyblok/react'
-import Icon from '@iconify/react'
+import { Icon } from '@iconify/react'
 
 export default function NavMainItem({ blok }) {
   return (

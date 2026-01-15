@@ -3,6 +3,8 @@ import Page from "@/components/Page";
 import Feature from "@/components/Feature";
 import Grid from "@/components/Grid";
 import Teaser from "@/components/Teaser";
+import NavMain from '@/components/NavMain';
+import NavMainItem from '@/components/NavMainItem';
 
 export const getStoryblokApi = storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_API_ACCESS_TOKEN,
@@ -14,6 +16,8 @@ export const getStoryblokApi = storyblokInit({
     page: Page,
     feature: Feature,
     grid: Grid,
-    teaser: Teaser
+    teaser: Teaser,
+    nav_main: NavMain,
+    nav_main_item: NavMainItem,
   },
 });

@@ -1,6 +1,5 @@
-import { storyblokEditable } from '@storyblok/react/rsc'
-import Image from 'next/image'
-import RichText from '@/components/RichText'
+import { storyblokEditable, StoryblokServerRichText } from '@storyblok/react/rsc';
+import Image from 'next/image';
 
 export default function Article({ blok }) {
   return (
@@ -35,7 +34,7 @@ export default function Article({ blok }) {
 
       {blok.content && (
         <div className="prose prose-lg">
-          <RichText document={blok.content} />
+          <StoryblokServerRichText doc={blok.content} />
         </div>
       )}
     </article>

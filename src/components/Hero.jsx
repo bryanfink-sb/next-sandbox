@@ -1,4 +1,4 @@
-import { storyblokEditable, StoryblokComponent } from '@storyblok/react/rsc'
+import { storyblokEditable, StoryblokServerComponent } from '@storyblok/react/rsc'
 import Image from 'next/image'
 
 export default function Hero({ blok }) {
@@ -30,7 +30,7 @@ export default function Hero({ blok }) {
 
         <div className="flex gap-4 justify-center flex-wrap">
           {blok.buttons?.map((nestedBlok) => (
-            <StoryblokComponent
+            <StoryblokServerComponent
               key={nestedBlok._uid}
               blok={nestedBlok}
             />

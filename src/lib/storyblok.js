@@ -5,9 +5,11 @@ import Grid from "@/components/Grid";
 import Teaser from "@/components/Teaser";
 import NavMain from '@/components/NavMain';
 import NavMainItem from '@/components/NavMainItem';
-import Hero from './Hero'
-import Article from './Article'
-import ArticleCard from './ArticleCard'
+import Hero from '@/components/Hero';
+import Article from '@/components/Article';
+import ArticleCard from '@/components/ArticleCard';
+
+
 
 export const getStoryblokApi = storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_API_ACCESS_TOKEN,
